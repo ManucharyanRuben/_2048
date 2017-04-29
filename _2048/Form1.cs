@@ -212,7 +212,6 @@ namespace _2048
                 for (int j = 0; j < game.NumbersArray.GetLength(1); j++)
                 {
                     c = Color.FromName(colorName);
-                    //c.ToKnownColor();
                     GetPictureBoxByName($"_{i}{j}").BackColor = c;
                 }
             }
@@ -235,7 +234,7 @@ namespace _2048
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            game.maxScore = 1024;
+            game.maxScore = 2048;
         }
     }
 }
