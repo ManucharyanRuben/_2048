@@ -90,7 +90,6 @@ namespace _2048
         {
             int i = 1;
 
-            //isContinue = false;
 
             for (int step = 0; step < 7; step++)
             {
@@ -104,7 +103,6 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i - 1, j, NumbersArray[i - 1, j]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = false;
                         }
                         else if (NumbersArray[i - 1, j].Number == NumbersArray[i, j].Number)
                         {
@@ -112,17 +110,12 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i - 1, j, NumbersArray[i - 1, j]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = true;
                         }
 
                     }
 
                 }
-                //if (isContinue)
-                //{
-                //    isContinue = false;
-                //    continue;
-                //}
+          
                 i++;
                 if (i > 3)
                 {
@@ -135,7 +128,6 @@ namespace _2048
         public void MoveRigth()
         {
             int j = 2;
-            //isContinue = false;
 
             for (int step = 0; step < 7; step++)
             {
@@ -158,18 +150,13 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i, j + 1, NumbersArray[i, j + 1]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = true;
 
                         }
                     }
 
                 }
 
-                //if (isContinue)
-                //{
-                //    isContinue = false;
-                //    continue;
-                //}
+          
 
                 j--;
                 if (j < 0)
@@ -182,7 +169,6 @@ namespace _2048
         public void MoveLeft()
         {
             int j = 1;
-            //isContinue = false;
 
             for (int step = 0; step < 7; step++)
             {
@@ -196,7 +182,6 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i, j - 1, NumbersArray[i, j - 1]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = false;
                         }
                         else if (NumbersArray[i, j - 1].Number == NumbersArray[i, j].Number)
                         {
@@ -204,17 +189,11 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i, j - 1, NumbersArray[i, j - 1]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = true;
                         }
                     }
 
                 }
-                //if (isContinue)
-                //{
-                //    isContinue = false;
-                //    continue;
-                //}
-
+          
                 j++;
                 if (j > 3)
                 {
@@ -226,7 +205,6 @@ namespace _2048
         public void MoveDown()
         {
             int i = 2;
-            //isContinue = false;
 
             for (int step = 0; step < 7; step++)
             {
@@ -240,7 +218,6 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i + 1, j, NumbersArray[i + 1, j]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = false;
                         }
                         else if (NumbersArray[i + 1, j].Number == NumbersArray[i, j].Number)
                         {
@@ -248,16 +225,11 @@ namespace _2048
                             NumbersArray[i, j].Number = 0;
                             Draw(i + 1, j, NumbersArray[i + 1, j]);
                             Draw(i, j, (Numbers)0);
-                            //isContinue = true;
                         }
                     }
 
                 }
-                //if (isContinue)
-                //{
-                //    isContinue = false;
-                //    continue;
-                //}
+      
 
                 i--;
                 if (i < 0)
@@ -273,15 +245,9 @@ namespace _2048
             for (int i = 0; i < 16; i++)
             {
 
-                //int number = rnd.Next(0, 10);
-                //if (number == 5)
-                //{
-                //    number = 4;
-                //}
-                //else
-                //{
+       
                 int number = 2;
-                //}
+            
 
                 int x = rnd.Next(0, 3);
                 int y = rnd.Next(0, 3);
