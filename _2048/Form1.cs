@@ -54,11 +54,7 @@ namespace _2048
         {
             this.MaximumSize = new Size(this.Width, this.Height);
             this.MinimumSize = new Size(this.Width, this.Height);
-            Up.Visible = false;
-            Down.Visible = false;
-            Left.Visible = false;
-            Rigth.Visible = false;
-        }
+      }
 
         private void Up_Click(object sender, EventArgs e)
         {
